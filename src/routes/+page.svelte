@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-	<title>Welcome | Nerdwerk</title>
-	<meta name="description" content="Nerdwerk is happening." />
+	<title>Nerdwerk Lab</title>
+	<meta name="description" content="Nerdwerk Lab" />
 </svelte:head>
 
 <div in:fly={{ y: 80, duration: 500, delay: 100 }} out:fly={{ y: 80, duration: 200, delay: 0 }}>
