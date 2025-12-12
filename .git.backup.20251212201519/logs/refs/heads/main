@@ -1,0 +1,43 @@
+0000000000000000000000000000000000000000 86615312954bc7ca5496800305ec22f45025ce70 Roman Kuba <roman.kuba@gmail.com> 1753884831 +0200	commit (initial): Initial commit
+86615312954bc7ca5496800305ec22f45025ce70 86615312954bc7ca5496800305ec22f45025ce70 Roman Kuba <roman.kuba@gmail.com> 1753884912 +0200	Branch: renamed refs/heads/main to refs/heads/main
+86615312954bc7ca5496800305ec22f45025ce70 ffdabce8a948055922b2e070a8db93c6d34e9a44 Roman Kuba <roman.kuba@gmail.com> 1753885246 +0200	commit: Upgrades:
+ffdabce8a948055922b2e070a8db93c6d34e9a44 cf0259f27959fbfb284b1d4e9fae17e5b6e0221f Roman Kuba <roman.kuba@gmail.com> 1753885318 +0200	commit: Rerun in new yarn version
+cf0259f27959fbfb284b1d4e9fae17e5b6e0221f 18a5e9e7a97978e2d37fb35ade4742b25fcdf647 Roman Kuba <roman.kuba@gmail.com> 1753893958 +0200	commit: Fixed nuxt config
+18a5e9e7a97978e2d37fb35ade4742b25fcdf647 5c8f43bd2566d8d810a16575175fbf2a37df4d83 Roman Kuba <roman.kuba@gmail.com> 1753893967 +0200	commit: Updated default page
+5c8f43bd2566d8d810a16575175fbf2a37df4d83 49df2ade84df5d2713ffe4c0dfb556567793e1ec Roman Kuba <roman.kuba@gmail.com> 1753895807 +0200	commit: Add easter egg for gifs on the image
+49df2ade84df5d2713ffe4c0dfb556567793e1ec 9409a579254dc3169ac6846f2a443c63907154c0 Roman Kuba <roman.kuba@gmail.com> 1753896791 +0200	commit: headline changes
+9409a579254dc3169ac6846f2a443c63907154c0 9e1aa3be9713a90d9755801dd7a249929ba2c399 Roman Kuba <roman.kuba@gmail.com> 1753993838 +0200	commit: Minor design updates
+9e1aa3be9713a90d9755801dd7a249929ba2c399 10646565e18ed9eac58b0aa3a766554dd06a58b6 Roman Kuba <roman.kuba@gmail.com> 1754140559 +0200	commit: Added fly.io deploy support
+10646565e18ed9eac58b0aa3a766554dd06a58b6 4dfbbf16f47c5c6f59197c6792e7a4f7853cadf1 Roman Kuba <roman.kuba@gmail.com> 1754141749 +0200	commit: Update links
+4dfbbf16f47c5c6f59197c6792e7a4f7853cadf1 8487e4a88d9d97792d3cad6213d91d29b2b882f7 Roman Kuba <roman.kuba@gmail.com> 1754142574 +0200	commit: Added proper favicons
+8487e4a88d9d97792d3cad6213d91d29b2b882f7 5e0be1b6380b424a4b38e41a59854f50f0435876 Roman Kuba <roman.kuba@gmail.com> 1761904212 +0100	pull: Fast-forward
+5e0be1b6380b424a4b38e41a59854f50f0435876 62a8f204caec8ce3c3d3ee268eadfaf548caf3c7 Roman Kuba <roman.kuba@gmail.com> 1761904342 +0100	commit: Remove existing project
+62a8f204caec8ce3c3d3ee268eadfaf548caf3c7 8702124785e73d4e08f0fcbf8249c07ca88a6d07 Roman Kuba <roman.kuba@gmail.com> 1761983160 +0100	commit: Added fresh Svelte Setup
+8702124785e73d4e08f0fcbf8249c07ca88a6d07 019abbe2f4fac1541516ac25d2e334fdcbe95bd0 Roman Kuba <roman.kuba@gmail.com> 1761983831 +0100	commit: Minor adjustment to dockerfile
+019abbe2f4fac1541516ac25d2e334fdcbe95bd0 8702124785e73d4e08f0fcbf8249c07ca88a6d07 Roman Kuba <roman.kuba@gmail.com> 1761983849 +0100	reset: moving to HEAD~
+8702124785e73d4e08f0fcbf8249c07ca88a6d07 0306150c57df07e07c3ab32476c03b87ccc01b29 Roman Kuba <roman.kuba@gmail.com> 1761983856 +0100	commit: Minor adjustment to dockerfile
+0306150c57df07e07c3ab32476c03b87ccc01b29 91261c98565ebf5af0944b56de4756e4654df667 Roman Kuba <roman.kuba@gmail.com> 1761993124 +0100	commit: Scaffolded rest of the pages
+91261c98565ebf5af0944b56de4756e4654df667 de004dfd55fb9c7967e255da68746cb30a88efd6 Roman Kuba <roman.kuba@gmail.com> 1762008730 +0100	commit: Added logo section
+de004dfd55fb9c7967e255da68746cb30a88efd6 8979c6d9e71f1336e7e9616d9b4a288072a343a3 Roman Kuba <roman.kuba@gmail.com> 1762009047 +0100	commit: Added svg declaration to app.d.ts
+8979c6d9e71f1336e7e9616d9b4a288072a343a3 87a6ca6cb0a8bb2f3b955c9aae2d9458556a0b39 Roman Kuba <roman.kuba@gmail.com> 1762073298 +0100	commit: Fixed Navigation
+87a6ca6cb0a8bb2f3b955c9aae2d9458556a0b39 8bc169f469a973e382109a4a91a5bb4c3e00333a Roman Kuba <roman.kuba@gmail.com> 1762073658 +0100	commit: minor text adjustemnt for nav
+8bc169f469a973e382109a4a91a5bb4c3e00333a ae2016ed197c97d9100f0015643df68eb355f94a Roman Kuba <roman.kuba@gmail.com> 1762074436 +0100	commit: Added max-width layout
+ae2016ed197c97d9100f0015643df68eb355f94a d468c039c08e7ed88085b1f8fcc77bdd21bf79f4 Roman Kuba <roman.kuba@gmail.com> 1762427925 +0100	commit: Added Line component
+d468c039c08e7ed88085b1f8fcc77bdd21bf79f4 bf482fe92e7012338c6c2c551a90d16324e18645 Roman Kuba <roman.kuba@gmail.com> 1763663863 +0100	pull --tags origin main: Fast-forward
+bf482fe92e7012338c6c2c551a90d16324e18645 6d6d33e5db3bb3cd669d898d967015ddafbefef4 Roman Kuba <roman.kuba@gmail.com> 1763670827 +0100	commit: Update main page content
+6d6d33e5db3bb3cd669d898d967015ddafbefef4 47212f8c3cd6e2f192fa4df26546c58b6d479887 Roman Kuba <roman.kuba@gmail.com> 1763671226 +0100	commit: Refactored into IconContent components
+47212f8c3cd6e2f192fa4df26546c58b6d479887 f7c16dc108fd79734bce063478a65f942405790e Roman Kuba <roman.kuba@gmail.com> 1764527599 +0100	commit: Updatet yarn version
+f7c16dc108fd79734bce063478a65f942405790e 56907a1d23e7d2178443aa92e595622fe17f465f Roman Kuba <roman.kuba@gmail.com> 1764577461 +0100	commit: feat: Add 'write' icon and content section to homepage, and remove journal navigation link.
+56907a1d23e7d2178443aa92e595622fe17f465f 0ac85f3dcf4921e78688cb048f837b069fb03c48 Roman Kuba <roman.kuba@gmail.com> 1764706931 +0100	commit: Adjusted spacing in main content component
+0ac85f3dcf4921e78688cb048f837b069fb03c48 57ece8ab0cf6ee3f92f9d04660a1c269f2ade93a Roman Kuba <roman.kuba@gmail.com> 1764708794 +0100	commit: Added custom cursor for links
+57ece8ab0cf6ee3f92f9d04660a1c269f2ade93a f3731e9bc9a6e623125419634d796e561a603417 Roman Kuba <roman.kuba@gmail.com> 1765177228 +0100	commit: Style updates with mobile first
+f3731e9bc9a6e623125419634d796e561a603417 205edb6e023749979f244efc43c58f1b0b294ff1 Roman Kuba <roman.kuba@gmail.com> 1765194411 +0100	commit: Added footer
+205edb6e023749979f244efc43c58f1b0b294ff1 6d746003cbd6f2efcb07ace0e2cd6d48156c6d18 Roman Kuba <roman.kuba@gmail.com> 1765195030 +0100	commit: Fixed Deploy to fly.io
+6d746003cbd6f2efcb07ace0e2cd6d48156c6d18 380fea1f53e1ea5bb3a25ad97a425cd61ca886c3 Roman Kuba <roman.kuba@gmail.com> 1765213734 +0100	commit: Added favicons and tracking
+380fea1f53e1ea5bb3a25ad97a425cd61ca886c3 9ec99012f4a5606a4156d42cdaf0c94e4b77bf4c Roman Kuba <roman.kuba@gmail.com> 1765214606 +0100	commit: Made sure tracking only runs in production
+9ec99012f4a5606a4156d42cdaf0c94e4b77bf4c 619801ad73c2908e73c5e45719dcd6386081cad0 Roman Kuba <roman.kuba@gmail.com> 1765216993 +0100	commit: removed broken import
+619801ad73c2908e73c5e45719dcd6386081cad0 d66f70f8d0a23b14f81c76865c3bb58e13ee3cf1 Roman Kuba <roman.kuba@gmail.com> 1765217001 +0100	commit: fixed spacing on mobile
+d66f70f8d0a23b14f81c76865c3bb58e13ee3cf1 85242ea4a4b6b09d03915c4b3be22ba919116902 Roman Kuba <roman.kuba@gmail.com> 1765226516 +0100	commit: massive content adjustments and styling
+85242ea4a4b6b09d03915c4b3be22ba919116902 145b84692d48b66ac6d1c7b6faf095e7130e8a47 Roman Kuba <roman.kuba@gmail.com> 1765371754 +0100	commit: Added some smooth animations
+145b84692d48b66ac6d1c7b6faf095e7130e8a47 d36a8c3e30ee47f738d12208ca466d1bffd3e946 Roman Kuba <roman.kuba@gmail.com> 1765372080 +0100	commit: Improved all animations
+d36a8c3e30ee47f738d12208ca466d1bffd3e946 8afe4967aead0966c1d9541b56cc7cc4efc83ce0 Roman Kuba <roman.kuba@gmail.com> 1765400089 +0100	commit: Added nice hover menu
