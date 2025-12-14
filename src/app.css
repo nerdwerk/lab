@@ -27,7 +27,7 @@
 
 @layer base {
 	body {
-		@apply bg-nerd-yellow;
+		@apply bg-nerd-yellow text-xl;
 		font-family: var(--default-font-family);
 	}
 
