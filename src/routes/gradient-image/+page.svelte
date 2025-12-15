@@ -199,7 +199,9 @@
 				<div class="overlay">
 					<div
 						bind:this={previewTextEl}
-						style="color:white; font-weight:700; font-size: {Math.round(previewHeight / 6)}px; text-shadow: 0 6px 12px rgba(0,0,0,0.35); white-space: normal;"
+						style="color:white; font-weight:700; font-size: {Math.round(
+							previewHeight / 6
+						)}px; text-shadow: 0 6px 12px rgba(0,0,0,0.35); white-space: normal;"
 					>
 						{text}
 					</div>
