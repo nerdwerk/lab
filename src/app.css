@@ -32,7 +32,7 @@
 	}
 
 	main a {
-		@apply cursor-cool font-bold text-nerd-blue hover:underline;
+		@apply font-bold text-nerd-blue hover:underline;
 	}
 }
 
