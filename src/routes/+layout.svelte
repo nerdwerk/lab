@@ -1,11 +1,7 @@
 <script lang="ts">
 	import '../app.css';
-
+	import { page } from '$app/state';
 	import { dev } from '$app/environment';
-
-	// Import assets for the Layout
-	import logo from '$lib/assets/logo.svg';
-	import logoText from '$lib/assets/logo-text.svg';
 
 	let { children } = $props();
 </script>
@@ -35,6 +31,12 @@
 		</div>
 		<a href="https://nerdwerk.com" class="text-sm hover:underline">> nerdwerk.com</a>
 	</header>
+
+	{#if page.url.pathname !== '/'}
+		<div class="w-full p-4 text-left text-nerd-blue">
+			<a href="/">&lt; Home</a>
+		</div>
+	{/if}
 
 	<main class="mt-20 w-full p-4">
 		{@render children()}
