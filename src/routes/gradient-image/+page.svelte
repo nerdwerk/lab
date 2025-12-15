@@ -23,6 +23,7 @@
 
 	let canvasEl;
 	let offscreenCanvas;
+	let previewTextEl;
 
 	onMount(() => {
 		// Create an offscreen canvas used for exports
@@ -36,7 +37,10 @@
 	}
 
 	function createLinearGradientFor(ctx, width, height, g) {
-		const angle = degToRad(g.angle % 360);
+		// CSS angles: 0deg = top, 90deg = right (clockwise).
+		// Canvas trig: 0 rad = right, positive = counter-clockwise.
+		// Convert CSS angle to canvas angle: canvas = (90deg - cssAngle).
+		const angle = degToRad((90 - (g.angle % 360) + 360) % 360);
 		// direction vector
 		const dx = Math.cos(angle);
 		const dy = Math.sin(angle);
@@ -83,15 +87,22 @@
 		ctx.shadowBlur = Math.max(4, Math.round(height * 0.01));
 		ctx.shadowOffsetY = Math.round(height * 0.008);
 
-		// support multi-line by splitting on newlines
-		const lines = text
-			.split('\n')
-			.map((l) => l.trim())
-			.filter(Boolean);
+		// For now, do not support multi-line. Collapse newlines to spaces.
+		const singleLine = text.replace(/\s*\n\s*/g, ' ').trim();
+		const lines = singleLine ? [singleLine] : [];
 		// reduce font size until the longest line fits within 90% width
 		const maxWidth = width * 0.9;
 		function fits(size) {
-			ctx.font = `${size}px Inter, Roboto, sans-serif`;
+			let family = 'Inter, Roboto, sans-serif';
+			try {
+				if (previewTextEl) {
+					const cs = getComputedStyle(previewTextEl);
+					if (cs && cs.fontFamily) family = cs.fontFamily;
+				}
+			} catch (e) {
+				// ignore
+			}
+			ctx.font = `bold ${size}px ${family}`;
 			return lines.every((line) => ctx.measureText(line).width <= maxWidth);
 		}
 
@@ -99,7 +110,17 @@
 			fontSize -= 2;
 		}
 
-		ctx.font = `bold ${fontSize}px Inter, Roboto, sans-serif`;
+		// use the same font-family as the preview when possible
+		try {
+			let family = 'Inter, Roboto, sans-serif';
+			if (previewTextEl) {
+				const cs = getComputedStyle(previewTextEl);
+				if (cs && cs.fontFamily) family = cs.fontFamily;
+			}
+			ctx.font = `bold ${fontSize}px ${family}`;
+		} catch (e) {
+			ctx.font = `bold ${fontSize}px Inter, Roboto, sans-serif`;
+		}
 		// compute vertical start so text is centered
 		const lineHeight = fontSize * 1.05;
 		const totalHeight = lineHeight * lines.length;
@@ -112,7 +133,16 @@
 		return offscreenCanvas;
 	}
 
-	function downloadImage() {
+	async function downloadImage() {
+		// Ensure fonts are loaded so canvas text matches the preview
+		if (typeof document !== 'undefined' && document.fonts && document.fonts.ready) {
+			try {
+				await document.fonts.ready;
+			} catch (e) {
+				// ignore
+			}
+		}
+
 		const c = drawToCanvas();
 		c.toBlob((blob) => {
 			const a = document.createElement('a');
@@ -146,7 +176,7 @@
 		</div>
 
 		<div class="ml-0 w-full flex-1 sm:ml-4">
-			<label class="mb-1 block text-sm font-medium">Text (\n for line break)</label>
+			<label class="mb-1 block text-sm font-medium">Text</label>
 			<input bind:value={text} class="w-full rounded border p-2" />
 		</div>
 
@@ -168,9 +198,8 @@
 			>
 				<div class="overlay">
 					<div
-						style="color:white; font-weight:700; font-size: {Math.round(
-							previewHeight / 6
-						)}px; text-shadow: 0 6px 12px rgba(0,0,0,0.35); white-space: pre-wrap;"
+						bind:this={previewTextEl}
+						style="color:white; font-weight:700; font-size: {Math.round(previewHeight / 6)}px; text-shadow: 0 6px 12px rgba(0,0,0,0.35); white-space: normal;"
 					>
 						{text}
 					</div>
@@ -184,7 +213,7 @@
 				<div class="mb-2 text-sm"><strong>Size:</strong> {OUTPUT_WIDTH} × {OUTPUT_HEIGHT} (px)</div>
 				<div class="mb-2 text-sm"><strong>Selected:</strong> {gradients[selectedIndex].name}</div>
 				<div class="text-sm">
-					Tip: Press <kbd>Enter</kbd> inside the text input to add a line break.
+					Tip: Line breaks are disabled for exports; use a single line of text.
 				</div>
 			</div>
 		</div>
